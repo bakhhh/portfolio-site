@@ -261,7 +261,7 @@ nav ul li a:hover::after{
 
 .btn{
     display: block;
-    margin: 50px auto;
+    margin: 10px auto;
     width: fit-content;
     border: 1px solid #ff004f;
     padding: 14px 50px;
@@ -365,9 +365,8 @@ nav .fa-solid{
         background-size: cover; }
   
     #header img{
-        margin-top: 20px;
-        margin-left: 50px;
-        width: 200px;
+        margin-left: -15px;
+        width: 300px;
         height: auto;
     }
     nav .fa-solid{
@@ -375,7 +374,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul {
-        background: #ff004f;
+        background: #000000;
         position: fixed;
         top: 0;
         right: -200px;
@@ -394,6 +393,11 @@ nav .fa-solid{
     position: absolute;
     top: 25px;
     left: 25px;
+    cursor: pointer;
+   }
+   nav .fa-solid.fa-bars{
+    margin-left: -20px;
+    position: absolute;
     cursor: pointer;
    }
    .subtitle{
