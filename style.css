@@ -19,11 +19,36 @@ body{
     background-image: url(images/newspaper.png);
     background-size: cover;
     background-position: center;
+
 }
 
 .container{
     padding: 10px 10%;
+
+
 }
+
+.navigation{
+    padding: 10px 10%;
+    background-color: #080808;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+
+}
+
+
+/* .container nav{
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    padding: 50px 50px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: -20px;
+} */
 
 
 nav{
@@ -31,15 +56,24 @@ nav{
     align-items: top;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    
+ 
+    
 }
-.logo{
-    width: 140px;
+#header img{
+    margin-top: -70px;
+    margin-left: -180px;
+    width: 200px;
+    height: auto;
 }
-
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
+   
+    
 }
 
 nav ul li a{
@@ -47,6 +81,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    
 }
 
 nav ul li a::after{
@@ -63,6 +98,8 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+
 /*---about----- */
 
 #about{
@@ -365,7 +402,7 @@ nav .fa-solid{
         background-size: cover; }
   
     #header img{
-        margin-left: -15px;
+        margin-left: -20px;
         width: 300px;
         height: auto;
     }
@@ -374,31 +411,70 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul {
-        background: #000000;
+        background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        left: -200px;
+        width: 150px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: left 0.5s;
         
     }
    nav ul li{
         display: block;
-        margin: 25px;
+        margin: 20px;
    }
+
+   nav ul li a{
+    left: 20px;
+    
+}
    nav ul .fa-solid{
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
    }
+   
+   nav ul .fa-solid.fa-house{
+    top: 1.5px;
+    left: -25px;
+    font-size: 15px;
+   }
+
+   nav ul .fa-solid.fa-circle-info{
+    top: 1.5px;
+    left: -25px;
+    font-size: 15px;
+   }
+
+   nav ul .fa-solid.fa-briefcase{
+    top: 1.5px;
+    left: -25px;
+    font-size: 15px;
+   }
+   nav ul .fa-solid.fa-book{
+    top: 1.5px;
+    left: -25px;
+    font-size: 15px;
+   }
+   nav ul .fa-solid.fa-phone{
+    top: 1.5px;
+    left: -25px;
+    font-size: 15px;
+   }
+   
+
    nav .fa-solid.fa-bars{
-    margin-left: -20px;
-    position: absolute;
+    margin-left: -30px;
+    position: fixed;
     cursor: pointer;
+   }
+   nav .fa-solid.fa-xmark{
+        top: 10px;
+        left: 120px;
    }
    .subtitle{
     font-size: 40px;
@@ -430,6 +506,9 @@ nav .fa-solid{
    .submit-button{
     margin-left: 60px;
     font-size: 16px;
+   }
+   nav ul li a::after{
+    background: #fff;
    }
 }
 
